@@ -1,0 +1,10 @@
+#testroute
+GEt http://localhost:3000/api/v1/
+
+###
+#Login route
+GET http://localhost:3000/api/v1/dashboard
+
+###
+#Dashboard route
+POST http://localhost:3000/api/v1/login

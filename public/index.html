@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JWT Basics</title>
+  <link rel="stylesheet" href="./styles.css" type="text/css">
+</head>
+<body>
+  <main>
+    <form class="form">
+      <h1>Login or register</h1>
+      <div>
+        <label>Username:</label>
+        <input type="text" class="username"/>
+      </div>
+      <div>
+        <label>Password:</label>
+        <input type="password" class="password"/>
+      </div>
+      <div class="form-alert">Error occured</div>
+      <button type="submit">Submit</button>
+    </form>
+    <div class="container">
+      <h1>Dashboard</h1>
+      <p class="token">No token present</p>
+      <div class="result"></div>
+      <button class="data">Get Data</button>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
