@@ -1,10 +1,7 @@
 
-class CustomAPIError extends Error{
-  constructor(message,statusCode)
-  {
-    super(message)
-    this.statusCode = statusCode
-  }
-}
+const { CustomAPIError } = require('./custom-error')
+const { BadRequest } = require('./bad-request')
+const { Unauthenticated } = require('./unauthenticated')
+const { NotFound } = require('./not-found')
 
-module.exports = { CustomAPIError }
+module.exports = { CustomAPIError,BadRequest,Unauthenticated,NotFound }

@@ -3,8 +3,14 @@ GEt http://localhost:3000/api/v1/
 
 ###
 #Login route
-GET http://localhost:3000/api/v1/dashboard
+POST http://localhost:3000/api/v1/login
+Content-Type: application/json
+
+{
+  "userName" : "Amil P A",
+  "password" : "neeyetha"
+}
 
 ###
 #Dashboard route
-POST http://localhost:3000/api/v1/login
+GET http://localhost:3000/api/v1/dashboard
